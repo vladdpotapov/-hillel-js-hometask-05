@@ -51,9 +51,9 @@ function calculateProductPrice() {
     productPrice = productAmount * selectedProduct.price;
     console.log('The price: $', productPrice);
 
-if (productPrice > DISCOUNT_FROM) {
-    finalPrice = productPrice * (1 - DISCOUNT);
-}
-console.log('Your discount: ' + (DISCOUNT * 100) + '%');
-console.log('Your final price: $' + finalPrice);
+    if (productPrice > DISCOUNT_FROM) {
+        finalPrice = productPrice * (1 - DISCOUNT);
+        console.log('Your discount: ' + (DISCOUNT * 100) + '%');
+        console.log('Your final price: $' + finalPrice);
+    }
 }
